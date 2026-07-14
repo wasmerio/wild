@@ -1,5 +1,5 @@
 [package]
-name = "libwild"
+name = "wasmer-libwild"
 description = "A library that provides a fast Linux linker"
 version.workspace = true
 license.workspace = true

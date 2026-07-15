@@ -884,119 +884,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "libwild"
-version = "0.9.0"
-dependencies = [
- "anyhow",
- "ar",
- "atomic-take",
- "bitflags",
- "blake3",
- "bumpalo-herd",
- "bytesize",
- "cc",
- "colored",
- "colosseum",
- "crossbeam-queue",
- "crossbeam-utils",
- "derive_more",
- "flate2",
- "foldhash 0.2.0",
- "gimli 0.33.0",
- "glob",
- "hashbrown 0.17.1",
- "hex",
- "indexmap",
- "itertools",
- "jobserver",
- "leb128",
- "libc",
- "libloading",
- "linker-layout",
- "linker-trace",
- "linker-utils",
- "memchr",
- "memmap2",
- "nix",
- "object 0.39.1",
- "perf-event",
- "perfetto-recorder",
- "rayon",
- "serde",
- "serde_yaml",
- "sha2",
- "sharded-offset-map",
- "sharded-vec-writer 0.4.0",
- "smallvec",
- "symbolic-common",
- "symbolic-demangle",
- "tempfile",
- "thread_local",
- "tracing",
- "tracing-subscriber",
- "uuid",
- "wasmparser 0.248.0",
- "winnow",
- "zerocopy",
- "zstd",
-]
-
-[[package]]
-name = "linker-diff"
-version = "0.9.0"
-dependencies = [
- "anyhow",
- "clap",
- "colored",
- "gimli 0.33.0",
- "hashbrown 0.17.1",
- "iced-x86",
- "itertools",
- "linker-layout",
- "linker-trace",
- "linker-utils",
- "memchr",
- "memmap2",
- "object 0.39.1",
- "symbolic-demangle",
- "tabled",
- "tempfile",
- "tracing",
- "tracing-subscriber",
- "which",
- "zerocopy",
-]
-
-[[package]]
-name = "linker-layout"
-version = "0.9.0"
-dependencies = [
- "anyhow",
- "postcard",
- "serde",
-]
-
-[[package]]
-name = "linker-trace"
-version = "0.9.0"
-dependencies = [
- "anyhow",
- "postcard",
- "serde",
-]
-
-[[package]]
-name = "linker-utils"
-version = "0.9.0"
-dependencies = [
- "anyhow",
- "derive_more",
- "leb128",
- "object 0.39.1",
- "paste",
-]
-
-[[package]]
 name = "linux-raw-sys"
 version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2235,6 +2122,119 @@ dependencies = [
 ]
 
 [[package]]
+name = "wasmer-linker-diff"
+version = "7.2.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "colored",
+ "gimli 0.33.0",
+ "hashbrown 0.17.1",
+ "iced-x86",
+ "itertools",
+ "memchr",
+ "memmap2",
+ "object 0.39.1",
+ "symbolic-demangle",
+ "tabled",
+ "tempfile",
+ "tracing",
+ "tracing-subscriber",
+ "wasmer-linker-layout",
+ "wasmer-linker-trace",
+ "wasmer-linker-utils",
+ "which",
+ "zerocopy",
+]
+
+[[package]]
+name = "wasmer-linker-layout"
+version = "7.2.0"
+dependencies = [
+ "anyhow",
+ "postcard",
+ "serde",
+]
+
+[[package]]
+name = "wasmer-linker-trace"
+version = "7.2.0"
+dependencies = [
+ "anyhow",
+ "postcard",
+ "serde",
+]
+
+[[package]]
+name = "wasmer-linker-utils"
+version = "7.2.0"
+dependencies = [
+ "anyhow",
+ "derive_more",
+ "leb128",
+ "object 0.39.1",
+ "paste",
+]
+
+[[package]]
+name = "wasmer-wild"
+version = "7.2.0"
+dependencies = [
+ "anyhow",
+ "ar",
+ "atomic-take",
+ "bitflags",
+ "blake3",
+ "bumpalo-herd",
+ "bytesize",
+ "cc",
+ "colored",
+ "colosseum",
+ "crossbeam-queue",
+ "crossbeam-utils",
+ "derive_more",
+ "flate2",
+ "foldhash 0.2.0",
+ "gimli 0.33.0",
+ "glob",
+ "hashbrown 0.17.1",
+ "hex",
+ "indexmap",
+ "itertools",
+ "jobserver",
+ "leb128",
+ "libc",
+ "libloading",
+ "memchr",
+ "memmap2",
+ "nix",
+ "object 0.39.1",
+ "perf-event",
+ "perfetto-recorder",
+ "rayon",
+ "serde",
+ "serde_yaml",
+ "sha2",
+ "sharded-offset-map",
+ "sharded-vec-writer 0.4.0",
+ "smallvec",
+ "symbolic-common",
+ "symbolic-demangle",
+ "tempfile",
+ "thread_local",
+ "tracing",
+ "tracing-subscriber",
+ "uuid",
+ "wasmer-linker-layout",
+ "wasmer-linker-trace",
+ "wasmer-linker-utils",
+ "wasmparser 0.248.0",
+ "winnow",
+ "zerocopy",
+ "zstd",
+]
+
+[[package]]
 name = "wasmparser"
 version = "0.244.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2280,7 +2280,7 @@ dependencies = [
 
 [[package]]
 name = "wild-linker"
-version = "0.9.0"
+version = "7.2.0"
 dependencies = [
  "ar",
  "dhat",
@@ -2290,9 +2290,6 @@ dependencies = [
  "itertools",
  "libloading",
  "libtest-mimic",
- "libwild",
- "linker-diff",
- "linker-layout",
  "mimalloc",
  "object 0.39.1",
  "os_info",
@@ -2303,6 +2300,9 @@ dependencies = [
  "tempfile",
  "toml",
  "wait-timeout",
+ "wasmer-linker-diff",
+ "wasmer-linker-layout",
+ "wasmer-wild",
  "which",
 ]
 

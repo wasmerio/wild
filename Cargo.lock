@@ -2123,7 +2123,7 @@ dependencies = [
 
 [[package]]
 name = "wasmer-linker-diff"
-version = "7.2.0"
+version = "7.2.1"
 dependencies = [
  "anyhow",
  "clap",
@@ -2149,7 +2149,7 @@ dependencies = [
 
 [[package]]
 name = "wasmer-linker-layout"
-version = "7.2.0"
+version = "7.2.1"
 dependencies = [
  "anyhow",
  "postcard",
@@ -2158,7 +2158,7 @@ dependencies = [
 
 [[package]]
 name = "wasmer-linker-trace"
-version = "7.2.0"
+version = "7.2.1"
 dependencies = [
  "anyhow",
  "postcard",
@@ -2167,7 +2167,7 @@ dependencies = [
 
 [[package]]
 name = "wasmer-linker-utils"
-version = "7.2.0"
+version = "7.2.1"
 dependencies = [
  "anyhow",
  "derive_more",
@@ -2178,7 +2178,7 @@ dependencies = [
 
 [[package]]
 name = "wasmer-wild"
-version = "7.2.0"
+version = "7.2.1"
 dependencies = [
  "anyhow",
  "ar",
@@ -2280,7 +2280,7 @@ dependencies = [
 
 [[package]]
 name = "wild-linker"
-version = "7.2.0"
+version = "7.2.1"
 dependencies = [
  "ar",
  "dhat",

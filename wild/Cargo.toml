@@ -18,7 +18,7 @@ path = "tests/integration_tests.rs"
 harness = false
 
 [dependencies]
-libwild = { package = "wasmer-wild", path = "../libwild", version = "=7.2.0" }
+libwild = { package = "wasmer-wild", path = "../libwild", version = "=7.2.1" }
 
 # This is off by default, since it doesn't appear to help. However, if you're linking against musl
 # libc, which has a comparatively slow allocator, then enabling this does help. To enable this,
@@ -33,8 +33,8 @@ itertools.workspace = true
 foldhash.workspace = true
 gimli.workspace = true
 hex.workspace = true
-linker-diff = { package = "wasmer-linker-diff", path = "../linker-diff", version = "=7.2.0" }
-linker-layout = { package = "wasmer-linker-layout", path = "../linker-layout", version = "=7.2.0" }
+linker-diff = { package = "wasmer-linker-diff", path = "../linker-diff", version = "=7.2.1" }
+linker-layout = { package = "wasmer-linker-layout", path = "../linker-layout", version = "=7.2.1" }
 libloading.workspace = true
 libtest-mimic = { workspace = true }
 object.workspace = true
